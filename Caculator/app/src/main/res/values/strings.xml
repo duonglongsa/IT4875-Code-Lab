@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="row2">0</string>
+    <string name="row1"></string>
+</resources>
