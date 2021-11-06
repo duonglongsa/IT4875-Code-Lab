@@ -31,14 +31,13 @@ public class MainActivity extends AppCompatActivity {
             row2.setText(String.valueOf(result));
             num1 = result;
             currentOperator = operator;
-            isEditingRow2 = false;
         } else {
             currentOperator = operator;
             row1.setText(row2.getText().toString());
             row1.append(" " + operator);
             num1 = Double.parseDouble(row2.getText().toString());
-            isEditingRow2 = false;
         }
+        isEditingRow2 = false;
     }
 
 
@@ -104,10 +103,21 @@ public class MainActivity extends AppCompatActivity {
         row2.setText(String.valueOf(result));
         isEditingRow2 = false;
     }
+    public void onNegativeClick(View view){
+        String currentRow = row2.getText().toString();
+        if(currentRow.charAt(0) == '-'){
+            row2.setText(currentRow.replace("-",""));
+        } else {
+            row2.setText('-' + currentRow);
+        }
+    }
     public void resetBtnOnClick(View view){
         row2.setText("0");
         row1.setText("");
         currentOperator = "";
+    }
+    public void onCEBtnOnClick(View view){
+        row2.setText("0");
     }
     public void comingSoon(View view){
         Toast.makeText(getApplicationContext(), "Not supported yet!", Toast.LENGTH_LONG).show();
