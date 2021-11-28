@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Clone Gmail UI</string>
+
+    <string name="search_menu">Search</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="sample_sender">Peter</string>
+    <string name="sample_title">Professor</string>
+    <string name="sample_brief">daasdsadasdasdasdasdasdoasdasdad</string>
+    <string name="sample_date">July 8th</string>
+    <string name="sample_description">Avatar</string>
+
+    <string name="opening_drawer">Open drawer</string>
+    <string name="closing_drawer">Close drawer</string>
+
+</resources>
