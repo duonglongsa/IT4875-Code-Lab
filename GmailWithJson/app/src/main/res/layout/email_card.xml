@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/email_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/card_padding">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/sample_description"
+            android:src="@android:drawable/toast_frame" />
+
+        <TextView
+            android:id="@+id/sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_padding"
+            android:layout_toRightOf="@+id/avatar"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/sample_sender"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sender"
+            android:layout_alignLeft="@+id/sender"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/sample_title" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
