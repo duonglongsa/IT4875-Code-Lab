@@ -18,5 +18,7 @@ public class TextViewActivity extends AppCompatActivity {
 
         String text = getIntent().getStringExtra("text");
 
+        textView.setText(text);
+
     }
 }
