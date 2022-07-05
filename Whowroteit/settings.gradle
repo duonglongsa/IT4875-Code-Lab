@@ -1,0 +1,2 @@
+rootProject.name = "Who wrote it"
+include ':app'
